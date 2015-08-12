@@ -5,3 +5,29 @@
 # In your final submission: 
 #  - Do not print anything extraneous!
 #  - Do not put anything but pass in main()
+
+##############################################################################
+
+# Write a list of first and last names
+#[First Last, First Last, etc]
+
+def nested_sum(list_):
+	sum = 0
+	for thing in list_:
+		if isinstance(thing, list):
+			sum += nested_sum(thing)
+		else:
+			sum += thing
+	return sum
+	
+	
+##############################################################################
+def main():
+	# list1 = [1,2,[3,4],5]
+	# sum = nested_sum(list1)
+	# print ("Sum is: %d") %(sum)
+	pass
+	
+if __name__ == '__main__':
+    main()
+
