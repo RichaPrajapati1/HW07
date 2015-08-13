@@ -23,10 +23,10 @@ def nested_sum(list_):
 	
 ##############################################################################
 def main():
-	list1 = [1,2,[3,4],5]
-	sum_ = nested_sum(list1)
-	#print ("Sum is: %d") %(sum_)
-	print sum_
+	# list1 = [1,2,[3,4],5]
+	# sum_ = nested_sum(list1)
+	# #print ("Sum is: %d") %(sum_)
+	# print sum_
 	pass
 	
 if __name__ == '__main__':
