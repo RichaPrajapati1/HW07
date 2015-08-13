@@ -19,13 +19,14 @@ def nested_sum(list_):
 		else:
 			sum += thing
 	return sum
-	
+
 	
 ##############################################################################
 def main():
-	# list1 = [1,2,[3,4],5]
-	# sum = nested_sum(list1)
-	# print ("Sum is: %d") %(sum)
+	list1 = [1,2,[3,4],5]
+	sum_ = nested_sum(list1)
+	#print ("Sum is: %d") %(sum_)
+	print sum_
 	pass
 	
 if __name__ == '__main__':

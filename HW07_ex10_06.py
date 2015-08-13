@@ -6,21 +6,23 @@
 
 ##############################################################################
 
-# Write a list of first and last names
-#[First Last, First Last, etc]
+# def is_sorted(list_):
+# 	previous = list_[0]
+# 	for thing in list_:
+# 		if thing < previous:
+# 			return False
+# 		previous = thing
+# 	return True
 
 def is_sorted(list_):
-	previous = list_[0]
-	for thing in list_:
-		if thing < previous:
-			return False
-		previous = thing
-	return True
+	return all([list_[i] <= list_[i+1] for i in range(len(list_)-1)])
+
+
 
 	
 ##############################################################################
 def main():
-	# list1 = ['apple', 'bear', 'cat']
+	# list1 = [1,2,3]
 	# print is_sorted(list1)
 	pass
 	

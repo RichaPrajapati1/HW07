@@ -12,22 +12,24 @@
 # Write a list of first and last names
 #[First Last, First Last, etc]
 
+# def cumulative_sum(list_):
+# 	retun_list = []
+# 	first = 0
+# 	second = 0
+# 	for thing in list_:
+# 		second = first + thing
+# 		retun_list.append(second)
+# 		first = second
+# 	return retun_list
+
 def cumulative_sum(list_):
-	retun_list = []
-	first = 0
-	second = 0
-	for thing in list_:
-		second = first + thing
-		retun_list.append(second)
-		first = second
-	return retun_list
-	
+	return [sum(list_[:i+1]) for i in range(len(list_))]
 	
 ##############################################################################
 def main():
-	list1 = [1,2,3]
-	print_list = cumulative_sum(list1)
-	print print_list
+	# list1 = [1,2,3]
+	# print_list = cumulative_sum(list1)
+	# print print_list
 	pass
 	
 if __name__ == '__main__':
